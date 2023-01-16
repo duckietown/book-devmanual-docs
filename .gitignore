@@ -6,3 +6,8 @@ html/*
 
 # otherwise CI thinks index not clean
 *.resolved
+
+venv/
+
+# mac
+.DS_Store
