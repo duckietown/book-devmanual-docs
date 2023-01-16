@@ -492,6 +492,18 @@ must also include a table title. See example above.
   - ```{important}
     This is an example of an important directive.
     ```
+* - ````md
+    ```{seealso}
+    text
+    ```
+    ````
+  - ````md
+    ```{seealso}
+    ```
+    ````
+  - ```{seealso}
+    This is an example of a seealso directive.
+    ```
 ``````
 
 All above specific admonitions are specific pre-made directives.
@@ -968,7 +980,7 @@ To glue a math equation try:
     ```
   - Ref to [](../../part_2/chapter_b/index.md)
 * - ```md
-    [name](path/to/document)
+    [text](path/to/document)
     ```
   - ```md
     See [here](../../part_2/chapter_b/index.md)
@@ -978,10 +990,46 @@ To glue a math equation try:
     for more information.
 ``````
 
+### Cross-project refs
+
+```{example}
+Link to another [HTML sphinx book](jupyter-book-docs:basics/organize)
+```
+
+The referencing is achieved with [intersphinx](https://www.sphinx-doc.org/en/master/usage/extensions/intersphinx.html).
+The reference comprises of the book name `jupyter-book-docs` and the label symbol `basics/organize`.
+
+The book name is defined in `_config.yml` like below
+```yaml
+sphinx:
+  ...
+  config:
+    intersphinx_mapping:
+      jupyter-book-docs:
+        - "https://jupyterbook.org/en/stable"
+        - null
+```
+
+To conveniently find the available labels in other books, a utility comes with jupyter-book installation.
+Take the above linked book for example:
+
+```bash
+python -m sphinx.ext.intersphinx https://jupyterbook.org/en/stable/objects.inv
+```
+
+Or, use it in a script (example outcomes provided below)
+
+```{code-cell}
+:tags: ["output_scroll", "hide-output", "full-width"]
+from sphinx.ext.intersphinx import inspect_main
+inspect_main(["https://jupyterbook.org/en/stable/objects.inv"])
+```
+
+And the label used above, `basics/organize`, could be found under the `std:doc` category.
+
 ## Footnotes
 
 ``````{margin}
-<br/><br/><br/><br/>
 ```{note}
 Footnotes are displayed at the very bottom of the page.
 ```
@@ -1012,8 +1060,7 @@ Footnotes are displayed at the very bottom of the page.
 ## Citations
 
 ```{note}
-Make sure you have a reference bibtex file. You can create one by running `touch references.bib`
-<!-- or view a {download}`references.bib <../references.bib>` example. -->
+Make sure you have a reference bibtex file. And it is included in the `_config.yml`, under `bibtex_bibfiles` section.
 ```
 
 ``````{list-table}
@@ -1027,14 +1074,12 @@ Make sure you have a reference bibtex file. You can create one by running `touch
     {cite}`mybibtexcitation`
     ```
   - ```md
-    This example generates the following
-    citation {cite}`perez2011python`.
+    An example citation {cite}`perez2011python`.
     ```
-  - This example generates the following
-    citation {cite}`perez2011python`.
+  - An example citation {cite}`perez2011python`.
 ``````
 
-To include a list of citations mentioned in the document, introduce the `bibliography` directive
+And, at the bottom of the page, include the list of references:
 
 ``````md
 ```{bibliography}
@@ -1042,4 +1087,6 @@ To include a list of citations mentioned in the document, introduce the `bibliog
 ```
 ``````
 
-<!-- See {doc}`../content/citations` for more information. -->
+```{bibliography}
+:filter: docname in docnames
+```

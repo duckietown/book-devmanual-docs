@@ -35,7 +35,13 @@ html:
   extra_navbar: ""
 
 sphinx:
+  extra_extensions:
+    - sphinx_examples
   config:
     html_theme_options:
       use_download_button: false
       repository_url: https://github.com/duckietown/BOOK_NAME_HERE
+    intersphinx_mapping:
+      jupyter-book-docs:
+        - "https://jupyterbook.org/en/stable"
+        - null
