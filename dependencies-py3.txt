@@ -1,6 +1,5 @@
 # LIST YOUR PYTHON3 PACKAGES HERE
 # NOTE: only place non-Duckietown libraries here; pin versions only if necessary
 
-jupyter-book
-imagesize
-beautifulsoup4
+pandas
+sphinx-examples
