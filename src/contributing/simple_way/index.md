@@ -3,7 +3,7 @@
 
 The simplest way to contribute to the documentation is to click any of the "✎" icons next to the headers, in the book itself.
 
-```{figure} ../../_images/contributing/simple/s1.png
+```{figure} ../../_images/contributing/simple/step1.png
 :name: fig:simple_way_1
 
 Click on edit button.
