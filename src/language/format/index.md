@@ -560,14 +560,14 @@ You could make an admonition with custom title and class with the example below.
     ```
     ````
   - ````md
-    ```{figure} ../../images/image.png
+    ```{figure} ../../_images/image.png
     :width: 30px
     :name: figure-example-2
 
     Here is my figure caption!
     ```
     ````
-  - ```{figure} ../../images/image.png
+  - ```{figure} ../../_images/image.png
     :width: 30px
     :name: figure-example-2
 
@@ -579,13 +579,13 @@ You could make an admonition with custom title and class with the example below.
     ```
     ````
   - ````md
-    ```{image} ../../images/image.png
+    ```{image} ../../_images/image.png
     :scale: 10%
     :align: center
     :name: image-example
     ```
     ````
-  - ```{image} ../../images/image.png
+  - ```{image} ../../_images/image.png
     :scale: 10%
     :align: center
     :name: image-example
@@ -603,7 +603,7 @@ You could make an admonition with custom title and class with the example below.
 :::{note}
 * Content/caption is not permitted for *image*s, but only available for *figure*s.
 * Settings are not available with `![alt-text](path/to/image)` format
-:::
+  :::
 
 <!-- See {doc}`../content/figures` and {doc}`../file-types/markdown` for more information. -->
 

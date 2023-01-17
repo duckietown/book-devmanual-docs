@@ -1,12 +1,6 @@
-# Welcome to your new Book
+# The Book Writer manual
 
-```{figure} _images/image.png
-:height: 150px
-:name: figure-example
-
-This is a sample image!
-```
-
+This book describes the features of our documentation system and the procedures to update it.
 
 ```{tableofcontents}
 ```
