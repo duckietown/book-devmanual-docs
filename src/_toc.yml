@@ -6,14 +6,14 @@ root: intro
 parts:
     - caption: How to contribute
       maxdepth: 2
-      numbered: True
+      numbered: False
       chapters:
           - file: contributing/overview/index
           - file: contributing/simple_way/index
           - file: contributing/local_edit/index
-#    - caption: Format and Style
-#      maxdepth: 2
-#      numbered: True
-#      chapters:
-#          - file: language/format/index
-#          - file: language/style/index
+    - caption: Format and Style
+      maxdepth: 2
+      numbered: False
+      chapters:
+          - file: language/format/index
+          - file: language/style/index

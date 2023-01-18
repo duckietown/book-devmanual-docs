@@ -25,7 +25,7 @@ This is a shortlisted version of the [MyST syntax cheat sheet](https://jupyterbo
 
 * - Syntax
   - Example
-  - Note
+  - Result
 * - ```md
     # Heading level 1
     ## Heading level 2
@@ -48,7 +48,7 @@ This is a shortlisted version of the [MyST syntax cheat sheet](https://jupyterbo
 
 * - Syntax
   - Example
-  - Note
+  - Result
 * - ```md
     (target_header)=
     ```
@@ -82,7 +82,7 @@ You can specify the text of the target:
 
 * - Syntax
   - Example
-  - Note
+  - Result
 * - ```md
     > text
     ```
@@ -100,7 +100,7 @@ You can specify the text of the target:
 
 * - Syntax
   - Example
-  - Note
+  - Result
 * - ```md
     ---
     ```
@@ -122,7 +122,7 @@ You can specify the text of the target:
 
 * - Syntax
   - Example
-  - Note
+  - Result
 * - ```md
     % text
     ```
@@ -543,6 +543,31 @@ You could make an admonition with custom title and class with the example below.
     ```
 ``````
 
+## Icons
+
+Icons are provided by the [font-awesome](https://fontawesome.com/) project.
+The complete list of icons available can be found [here](https://fontawesome.com/v5/search?o=r&m=free).
+
+``````{list-table}
+:header-rows: 1
+:widths: 10 20 20
+
+* - Syntax
+  - Example
+  - Result
+* - ````md
+    ```{icon} <icon-id>
+    ```
+    ````
+  - ````md
+    ```{icon} ice-cream
+    ```
+    ````
+  - ```{icon} ice-cream
+    ```
+    
+``````
+
 ## Figures and images
 
 ``````{list-table}
@@ -560,15 +585,15 @@ You could make an admonition with custom title and class with the example below.
     ```
     ````
   - ````md
-    ```{figure} ../../_images/image.png
-    :width: 30px
+    ```{figure} ../../_images/duckietown.jpeg
+    :width: 50px
     :name: figure-example-2
 
     Here is my figure caption!
     ```
     ````
-  - ```{figure} ../../_images/image.png
-    :width: 30px
+  - ```{figure} ../../_images/duckietown.jpeg
+    :width: 50px
     :name: figure-example-2
 
     Here is my figure caption!
@@ -579,14 +604,14 @@ You could make an admonition with custom title and class with the example below.
     ```
     ````
   - ````md
-    ```{image} ../../_images/image.png
-    :scale: 10%
+    ```{image} ../../_images/duckietown.jpeg
+    :scale: 20%
     :align: center
     :name: image-example
     ```
     ````
-  - ```{image} ../../_images/image.png
-    :scale: 10%
+  - ```{image} ../../_images/duckietown.jpeg
+    :scale: 20%
     :align: center
     :name: image-example
     ```
@@ -597,6 +622,35 @@ You could make an admonition with custom title and class with the example below.
     ![](https://tinyurl.com/39ewhkab)
     ````
   - ![](https://tinyurl.com/39ewhkab)
+    
+``````
+
+### Framed figures
+
+Use the `:class: framed` parameter to add a border around the image.
+
+``````{list-table}
+:header-rows: 1
+:widths: 10 20 20
+
+* - Syntax
+  - Example
+  - Result
+* - ````md
+    ```{figure} ./path/to/figure.jpg
+    :class: framed
+    ```
+    ````
+  - ````md
+    ```{figure} ../../_images/duckietown.jpeg
+    :width: 50px
+    :class: framed
+    ```
+    ````
+  - ```{figure} ../../_images/duckietown.jpeg
+    :width: 50px
+    :class: framed
+    ```
     
 ``````
 
@@ -1057,6 +1111,33 @@ Footnotes are displayed at the very bottom of the page.
 
 [^myref]: This **is** the footnote definition.
 
+
+(language-format-troubleshooting)=
+## Troubleshooting
+
+Troubleshooting cards can be created using the `{trouble}` directive.
+
+``````{list-table}
+:header-rows: 1
+:widths: 6 20
+
+* - Syntax
+  - Example
+* - ````md
+    ```{trouble}
+    symptom here
+    ---
+    resolution here
+    ```
+    ````
+  - ```{trouble}
+    I do not see a camera image.
+    ---
+    Make sure the camera cable is plugged in.
+    ```
+``````
+
+
 ## Citations
 
 ```{note}
@@ -1074,9 +1155,9 @@ Make sure you have a reference bibtex file. And it is included in the `_config.y
     {cite}`mybibtexcitation`
     ```
   - ```md
-    An example citation {cite}`perez2011python`.
+    An example citation {cite}`tani2016`.
     ```
-  - An example citation {cite}`perez2011python`.
+  - An example citation {cite}`tani2016`.
 ``````
 
 And, at the bottom of the page, include the list of references:

@@ -1,4 +1,4 @@
-(duckumentation-workflow)=
+(local-editor-workflow)=
 # The right way: Local editor 
 
 ```{tableofcontents}
@@ -32,119 +32,76 @@ Before you start, make sure that you have [installed Docker](+software_reference
 
 Install the Duckietown Shell using [these instructions](https://github.com/duckietown/duckietown-shell).
 
-### Fork the `docs-![book]` repo on the Github site
+### Fork the `book-[name]` repository on GitHub
 
-Fork one of the `docs-![book]` repos on the Github site ([](#fork-duckuments)).
+Navigate to the book repository page on GitHub, and click on the {bdg-dark-line}`Fork` button at
+the top-right corner of the page.
 
-This will create a new repo on your account that is linked to the original one.
+This will create a new repository on your account that is linked to the original one.
 
-<figure id="fork-duckuments">
- <img src="fork-duckuments.png" style='width: 80%'/>
-</figure>
-
-<!--
-
-TODO: re-make image
-
--->
 
 ### Checkout your fork locally
 
-Check out the forked repository as you would do normally.
+Check out the forked repository locally.
 
-### Initialize your folder
-
-Go into the folder:
-
-    $ cd docs-![book]
-
-
-When compiling a book for the first time, you need to run:
-
-    $ git submodule init
-
-And:
-
-    $ git submodule update
 
 ### Do your edits
 
-Do your edits on your local copy. The source files are in the directory `book/![book]`. The file and folder names start with numbers, these are used to determine the order that things show up in output.
+Do your edits on your local copy. 
+The source files are in the directory `src/`. 
 
-### Compile
+Images are stored in the directory `src/_images`, while `CSS` and `JS` files can be dropped inside the
+directory `src/_static` and will be automatically loaded.
 
-Compile using the `docs` commands in the Duckietown Shell:
 
-    $ dts docs build
+### Compile HTML
 
-Re-compile from scratch using:
+Compile using the `dts docs` commands in the Duckietown Shell:
 
-    $ dts docs clean
-    $ dts docs build
+    dts docs build
 
-If there are errors you should open `duckuments-dist/errors.html` and look at them and fix them.
+Clean up artifacts and build cache with the command,
 
-### Look at the local copy
+    dts docs clean
 
-Open the file `index.html` and navigate to whichever pages you have changed to make sure that they look the way want them to.
+
+#### View the HTML
+
+Once built, the book will be exported as HTML inside the directory `html/`.
+Open the file `html/index.html` to start. Make sure that your changes look the way you want them to.
+
+
+### Compile PDF
+
+Compile the book into a PDF file using the command,
+
+    dts docs build --pdf
+
+
+#### View the PDF
+
+Once built, the book will be exported as PDF inside the directory `pdf/`.
+Open the file `pdf/book.pdf` to start. Make sure that your changes look the way you want them to.
+
 
 ### Commit and push
 
 Commit and push as you would do normally.
 
+
 ### Make a pull request
 
 Create a pull request to the original repository.
 
-#### Option 1: Use the Github website
 
-Github offers a nice interface to create a pull request.
+### Publish artifacts directly
 
-TODO for volunteer: add image of pull request
+While it is recommended to use Continuous Integration (CI) systems (e.g., Jenkins, CircleCI) to perform
+automatic builds and deployments of the documentation, you can decide to push your local artifacts to the
+corresponding HTTP server.
+You can do so by running the following command,
 
-#### Option 2: Use the command-line program `hub`
+    dts docs publish [DNS]
 
-You can create a pull request from the command-line using [`hub`](+software_reference#hub):
-
-```
-$ hub pull-request
-```
-
-See: [](+software_reference#hub)
-
-## Using CircleCI {#duckumentation-workflow-circle}
-
-Circle CI makes it easier to check whether there are problems to be fixed.
-
-### Sign up on Circle
-
-Sign up on the Circle CI service, at the link [circleci.com](http://circleci.com).
-
-### Activate your build on Circle
-
-Activate the building at the link:
-
-```
-https://circleci.com/setup-project/gh/![username]/duckuments
-```
-
-where `![username]` is your Github username.
-
-Click "start building".
-
-
-####  Make sure everything compiles on Circle
-
-Go to the URL:
-
-```
-https://circleci.com/gh/![username]/duckuments
-```
-
-to see the status of your build.
-
-You can also preview the results by clicking the "artifacts" tab and selecting `index.html` from the list.
-
-<figure id="ci-artifacts">
- <img src='ci-artifacts.png' style='width:90%'/>
-</figure>
+where `[DNS]` is the hostname of the documentation website to push the artifacts to, 
+e.g., `docs.duckietown.com`.
