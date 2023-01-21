@@ -18,7 +18,7 @@ If you are in the Duckietown organization, then you can edit the files directly 
 branch for review (more on this later). If you are not a member of Duckietown, you will be asked to
 fork the repository first, follow the instructions shown on GitHub to do so.
 
-Let's proceed and perform our edits.
+Let us try this out and perform an edit:
 
 ```{figure} ../../_images/contributing/simple/step2.png
 :name: fig:simple_way_2
