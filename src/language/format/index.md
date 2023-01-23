@@ -366,6 +366,57 @@ must also include a table title. See example above.
   - This is an unnumbered ref: [table](example-table).
 ``````
 
+## Tabs
+
+Tabs can be used in several ways:
+1) At the page level to enclose instruction versions related to different releases (for example, to separate the DB21 and DB21M assembly instructions).
+2) Within pages to divide duplicate content with tab based.
+3) Nested within other components such as a list.
+
+```{note}
+Related content that does not include some duplication should be shown in a table rather than a tab to prevent hidden text.
+```
+
+``````{list-table}
+:header-rows: 1
+:widths: 10 20 20
+
+* - Syntax
+  - Example
+  - Result
+* - ```md
+    ::::{tab-set}
+    
+    :::{tab-item} Label
+    Content
+    :::
+    
+    ::::
+    ```
+  - ```md
+    ::::{tab-set}
+    
+    :::{tab-item} DB21
+    This is example content for the DB21
+    :::
+    
+    :::{tab-item} DB21M
+    This is example content for the DB21M
+    :::
+    ::::
+    ```
+  - ::::{tab-set}
+    
+    :::{tab-item} DB21
+    This is example content for the DB21
+    :::
+    
+    :::{tab-item} DB21M
+    This is example content for the DB21M
+    :::
+    ::::
+``````
+
 ## Admonitions
 
 ``````{list-table}
