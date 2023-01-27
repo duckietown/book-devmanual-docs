@@ -1,9 +1,9 @@
 (github-editor-workflow)=
 # The simple way: Github
 
-The simplest way to contribute to the documentation is to hover on the GitHub icon IMAGE_HERE at the top
-the documentation page we want to edit, and then press "suggest edit" from the dropdown menu as shown
-in the image below.
+The simplest way to contribute to the documentation is to hover the GitHub icon <i class="fab fa-github"></i>
+at the top the documentation page we want to edit, and then press "suggest edit" from the dropdown menu 
+as shown in the image below.
 
 ```{figure} ../../_images/contributing/simple/step1.png
 :name: fig:simple_way_1
@@ -13,12 +13,10 @@ Click on "suggest edit" button from the GitHub dropdown menu.
 ```
 
 This will take you to the text editor on GitHub. One can make and commit the edits in only a few seconds.
+You can edit the files directly and commit to a new branch then open a Pull Request to submit your changes 
+for review (more on this later).
 
-If you are in the Duckietown organization, then you can edit the files directly and commit to a personal
-branch for review (more on this later). If you are not a member of Duckietown, you will be asked to
-fork the repository first, follow the instructions shown on GitHub to do so.
-
-Let us try this out and perform an edit:
+Let us try this out:
 
 ```{figure} ../../_images/contributing/simple/step2.png
 :name: fig:simple_way_2
