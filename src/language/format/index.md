@@ -194,9 +194,9 @@ You can specify the text of the target:
     [text](relative_path)
     ```
   - ```md
-    [Another page](../../part_2/chapter_c/index.md)
+    [Another page](../style/index)
     ```
-  - [Another page](../../part_2/chapter_c/index.md)
+  - [Another page](../style/index)
 * - ```md
     <target>
     ```
@@ -1081,17 +1081,17 @@ To glue a math equation try:
     [](path/to/document)
     ```
   - ```md
-    Ref to [](../../part_2/chapter_b/index.md)
+    Ref to [](../style/index)
     ```
-  - Ref to [](../../part_2/chapter_b/index.md)
+  - Ref to [](../style/index)
 * - ```md
     [text](path/to/document)
     ```
   - ```md
-    See [here](../../part_2/chapter_b/index.md)
+    See [here](../style/index)
     for more information.
     ```
-  - See [here](../../part_2/chapter_b/index.md)
+  - See [here](../style/index)
     for more information.
 ``````
 

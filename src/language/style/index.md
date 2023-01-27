@@ -5,10 +5,6 @@ This chapter describes the style guide for our documentation. We will cover the 
 for writing the technical documentation.
 
 
-```{tableofcontents}
-```
-
-
 ## Organization
 
 

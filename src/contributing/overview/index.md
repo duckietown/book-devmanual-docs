@@ -1,9 +1,6 @@
 (duckumentation-intro)=
 # Overview
 
-```{tableofcontents}
-```
-
 (where_documentation_is)=
 ## Where the documentation is
 
