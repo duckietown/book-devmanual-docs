@@ -35,7 +35,7 @@ This is a shortlisted version of the [MyST syntax cheat sheet](https://jupyterbo
     ###### Heading level 6
     ```
   - ```md
-    # MyST Cheat Sheet
+    # MyST syntax cheat sheet
     ```
   - Level 1-6 headings, denoted by number of `#`
 ``````
