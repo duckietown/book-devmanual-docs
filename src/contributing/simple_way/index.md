@@ -13,10 +13,12 @@ Click on "suggest edit" button from the GitHub dropdown menu.
 ```
 
 This will take you to the text editor on GitHub. One can make and commit the edits in only a few seconds.
-You can edit the files directly and commit to a new branch then open a Pull Request to submit your changes 
-for review (more on this later).
 
-Let us try this out:
+If you are in the Duckietown organization, then you can edit the files directly and commit to a personal
+branch for review (more on this later). If you are not a member of Duckietown, you will be asked to
+fork the repository first, follow the instructions shown on GitHub to do so.
+
+Let us try this out and perform an edit:
 
 ```{figure} ../../_images/contributing/simple/step2.png
 :name: fig:simple_way_2
