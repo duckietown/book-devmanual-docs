@@ -1,26 +1,26 @@
 (local-editor-workflow)=
-# The right way: Local editor
+# The right way: Local editor 
 
 This section describes the workflow to edit the documentation for one single book.
 
 In a nutshell:
 
-* You *fork* the repos to your Github account.
+* You *fork* the repos to your GitHub account.
 * You compile locally using a Docker container (no installation necessary).
 * You contribute by opening a pull request.
 
 
 ## Workflow
 
-### Github setup
+### GitHub setup
 
-We assume that you have setup a Github account with working public keys.
+We assume that you have set up a GitHub account with working public keys.
 
 See: [Basic SSH config](+software_reference#github-access).
 
 See: [Key pair creation](+software_reference#howto-create-key-pair).
 
-See: [Adding public key on Github](+software_reference#github-access).
+See: [Adding public key on GitHub](+software_reference#github-access).
 
 
 ### Install Docker
@@ -28,33 +28,21 @@ See: [Adding public key on Github](+software_reference#github-access).
 Before you start, make sure that you have [installed Docker](+software_reference#docker).
 
 
-### Install the Duckieton Shell
+### Install the Duckietown Shell
 
 Install the Duckietown Shell using [these instructions](https://github.com/duckietown/duckietown-shell).
 
+### Fork the `book-[name]` repository on GitHub
 
-### Checkout the `book-[name]` repository locally
+Navigate to the book repository page on GitHub, and click on the {bdg-dark-line}`Fork` button at
+the top-right corner of the page.
 
-Check out the book repository locally.
-
-```{attention}
-Since the documentation repositories are private, forking on GitHub is disabled.
-```
+This will create a new repository on your account that is linked to the original one.
 
 
-### Create your own branch
+### Checkout your fork locally
 
-Switch to a new branch using the command,
-
-```shell
-git checkout -b BRANCH_NAME origin TRACKED_BRANCH
-```
-
-where `BRANCH_NAME` is the name you have chosen for your new branch. Branch names should
-indicate what the edits held by the branch are about, e.g., `fix-typos`. We also suggest 
-prepending the branch name with your username, e.g., `afdaniele-fix-typos`.
-Replace `TRACKED_BRANCH` with the branch you want to ultimately merge these changes into, 
-for example, `daffy`.
+Check out the forked repository locally.
 
 
 ### Do your edits
@@ -109,8 +97,7 @@ don't have access.
 
 ### Make a pull request
 
-Pushing directly to the production branches is not allowed. Somebody has to review your edits before
-they can go live. For that you can create a Pull Request through the GitHub website or using your IDE.
+Create a pull request to the original repository.
 
 
 ### Publish artifacts directly
