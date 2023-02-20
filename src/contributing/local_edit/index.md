@@ -5,22 +5,22 @@ This section describes the workflow to edit the documentation for one single boo
 
 In a nutshell:
 
-* You *fork* the repos to your Github account.
+* You *fork* the repos to your GitHub account.
 * You compile locally using a Docker container (no installation necessary).
 * You contribute by opening a pull request.
 
 
 ## Workflow
 
-### Github setup
+### GitHub setup
 
-We assume that you have setup a Github account with working public keys.
+We assume that you have set up a GitHub account with working public keys.
 
 See: [Basic SSH config](+software_reference#github-access).
 
 See: [Key pair creation](+software_reference#howto-create-key-pair).
 
-See: [Adding public key on Github](+software_reference#github-access).
+See: [Adding public key on GitHub](+software_reference#github-access).
 
 
 ### Install Docker
@@ -28,7 +28,7 @@ See: [Adding public key on Github](+software_reference#github-access).
 Before you start, make sure that you have [installed Docker](+software_reference#docker).
 
 
-### Install the Duckieton Shell
+### Install the Duckietown Shell
 
 Install the Duckietown Shell using [these instructions](https://github.com/duckietown/duckietown-shell).
 
