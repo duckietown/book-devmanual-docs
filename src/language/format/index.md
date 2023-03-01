@@ -1188,7 +1188,32 @@ Troubleshooting cards can be created using the `{trouble}` directive.
     ```
 ``````
 
+(language-format-requirements)=
+## Requirements
 
+Requirements/outputs cards can be created using the `{needget}` directive.
+
+``````{list-table}
+:header-rows: 1
+:widths: 6 20
+
+* - Syntax
+  - Example
+* - ````md
+    ```{needget}
+    * Requirement 1
+    * Requirement 2
+    ---
+    * Output 1
+    ```
+    ````
+  - ```{needget}
+    * Duckie
+    * Robot
+    ---
+    * Duckiebot
+    ```
+``````
 ## Citations
 
 ```{note}
