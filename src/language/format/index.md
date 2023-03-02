@@ -433,11 +433,11 @@ Related content that does not include some duplication should be shown in a tabl
     ````
   - ````md
     ```{note}
-    Use note directives for basic highlighting.
+    This is an example of a note directive.
     ```
     ````
   - ```{note}
-    Use note directives for basic highlighting.
+    This is an example of a note directive.
     ```
 * - ````md
     ```{warning}
@@ -446,11 +446,11 @@ Related content that does not include some duplication should be shown in a tabl
     ````
   - ````md
     ```{warning}
-    Use warnings for situations that might cause harm, but can be fixed.
+    This is an example of a warning directive.
     ```
     ````
   - ```{warning}
-    Use warnings for situations that might cause harm, but can be fixed.
+    This is an example of a warning directive.
     ```
 * - ````md
     ```{tip}
@@ -459,11 +459,24 @@ Related content that does not include some duplication should be shown in a tabl
     ````
   - ````md
     ```{tip}
-    A tip is a useful suggestion for the reader.
+    This is an example of a tip directive.
     ```
     ````
   - ```{tip}
-    A tip is a useful suggestion for the reader.
+    This is an example of a tip directive.
+    ```
+* - ````md
+    ```{caution}
+    text
+    ```
+    ````
+  - ````md
+    ```{caution}
+    This is an example of a caution directive.
+    ```
+    ````
+  - ```{caution}
+    This is an example of a caution directive.
     ```
 * - ````md
     ```{attention}
@@ -472,11 +485,11 @@ Related content that does not include some duplication should be shown in a tabl
     ````
   - ````md
     ```{attention}
-    This directive should be used to highlight particularly tricky steps.
+    This is an example of an attention directive.
     ```
     ````
   - ```{attention}
-    This directive should be used to highlight particularly tricky steps.
+    This is an example of an attention directive.
     ```
 * - ````md
     ```{danger}
@@ -485,11 +498,50 @@ Related content that does not include some duplication should be shown in a tabl
     ````
   - ````md
     ```{danger}
-    Used for situations that might cause irreparable harm (to people or robots).
+    This is an example of a danger directive.
     ```
     ````
   - ```{danger}
-    Used for situations that might cause irreparable harm (to people or robots).
+    This is an example of a danger directive.
+    ```
+* - ````md
+    ```{error}
+    text
+    ```
+    ````
+  - ````md
+    ```{error}
+    This is an example of an error directive.
+    ```
+    ````
+  - ```{error}
+    This is an example of an error directive.
+    ```
+* - ````md
+    ```{hint}
+    text
+    ```
+    ````
+  - ````md
+    ```{hint}
+    This is an example of a hint directive.
+    ```
+    ````
+  - ```{hint}
+    This is an example of a hint directive.
+    ```
+* - ````md
+    ```{important}
+    text
+    ```
+    ````
+  - ````md
+    ```{important}
+    This is an example of an important directive.
+    ```
+    ````
+  - ```{important}
+    This is an example of an important directive.
     ```
 * - ````md
     ```{seealso}
@@ -498,11 +550,10 @@ Related content that does not include some duplication should be shown in a tabl
     ````
   - ````md
     ```{seealso}
-    Used for external links (to third-party websites or other documents).
     ```
     ````
   - ```{seealso}
-    Used for external links (to third-party websites or other documents).
+    This is an example of a seealso directive.
     ```
 ``````
 
@@ -1137,32 +1188,7 @@ Troubleshooting cards can be created using the `{trouble}` directive.
     ```
 ``````
 
-(language-format-requirements)=
-## Requirements
 
-Requirements/outputs cards can be created using the `{needget}` directive.
-
-``````{list-table}
-:header-rows: 1
-:widths: 6 20
-
-* - Syntax
-  - Example
-* - ````md
-    ```{needget}
-    * Requirement 1
-    * Requirement 2
-    ---
-    * Output 1
-    ```
-    ````
-  - ```{needget}
-    * Duckie
-    * Robot
-    ---
-    * Duckiebot
-    ```
-``````
 ## Citations
 
 ```{note}
