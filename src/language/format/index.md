@@ -719,6 +719,87 @@ Use the `:class: framed` parameter to add a border around the image.
     is an example.
 ``````
 
+## Videos
+
+Videos can be referenced using the following methods:
+
+1) `vimeo` - When possible, video content should be added to the Vimeo account and formatted with the custom Duckietown `vimeo` directive.  
+2) `videoembed` - For other video content accessible via a web link, use the `videoembed` directive. All [`iframe` attributes](https://www.w3schools.com/tags/tag_iframe.ASP) are available mimicking the `:alt:` parameter syntax below.
+3) `video` - For videos stored locally to the book project (this is not recommended), use the `video` directive. All [`iframe` attributes](https://www.w3schools.com/tags/tag_video.asp) are available mimicking the `:alt:` parameter syntax below.
+
+
+### Referencing Vimeo videos
+
+``````{list-table}
+:header-rows: 1
+:widths: 15 20 15
+
+* - Syntax
+  - Example
+  - Result
+* - ````md
+    ```{vimeo} video-id
+    :alt: alt text
+    ```
+    ````
+  - ````md
+    ```{vimeo} 527022343
+    :alt: alt text
+    ```
+    ````
+  - ```{vimeo} 527022343
+    :alt: alt text
+    ```
+``````
+
+### Referencing web videos
+
+``````{list-table}
+:header-rows: 1
+:widths: 15 20 15
+
+* - Syntax
+  - Example
+  - Result
+* - ````md
+    ```{video} embed_link
+    :alt: alt text
+    ```
+    ````
+  - ````md
+    ```{video} https://www.youtube.com/embed/mXH1u885bn8
+    :alt: alt text
+    ```
+    ````
+  - 
+``````
+
+### Referencing local videos
+
+This is not recommended - please host your video content on Vimeo or another online service rather than in the book project.  If absolutely necessary, you can include local videos with custom formatting using the `video` directive.
+
+Supported file types: `.mp4`, `.ogm`, `.ogv`, `.ogg`, `.webm`.
+
+``````{list-table}
+:header-rows: 1
+:widths: 15 20 15
+
+* - Syntax
+  - Example
+  - Result
+* - ````md
+    ```{video} file_path 
+    :alt: alt
+    ```
+    ````
+  - ````md
+    ```{video} ../assets/videos/my_video.mp4
+    :alt: alt text
+    ```
+    ````
+  -
+``````
+
 ## Math
 
 ``````{list-table}
