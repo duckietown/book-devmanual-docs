@@ -384,37 +384,39 @@ Related content that does not include some duplication should be shown in a tabl
 * - Syntax
   - Example
   - Result
-* - ```md
-    ::::{tab-set}
+* - `````md
+    ````{tab-set}
     
-    :::{tab-item} Label
+    ```{tab-item} Label
     Content
-    :::
-    
-    ::::
     ```
-  - ```md
-    ::::{tab-set}
     
-    :::{tab-item} DB21
+    ````
+    `````
+    
+  - `````md
+    ````{tab-set}
+    
+    ```{tab-item} DB21
     This is example content for the DB21
-    :::
-    
-    :::{tab-item} DB21M
-    This is example content for the DB21M
-    :::
-    ::::
     ```
-  - ::::{tab-set}
     
-    :::{tab-item} DB21
-    This is example content for the DB21
-    :::
-    
-    :::{tab-item} DB21M
+    ```{tab-item} DB21M
     This is example content for the DB21M
-    :::
-    ::::
+    ```
+    ````
+    `````
+    
+  - ````{tab-set}
+    
+    ```{tab-item} DB21
+    This is example content for the DB21
+    ```
+    
+    ```{tab-item} DB21M
+    This is example content for the DB21M
+    ```
+    ````
 ``````
 
 ## Admonitions
