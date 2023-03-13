@@ -10,9 +10,9 @@ kernelspec:
   name: python3
 ---
 
-:::{note}
+```{note}
 This is a shortlisted version of the [MyST syntax cheat sheet](https://jupyterbook.org/en/stable/reference/cheatsheet.html).
-:::
+```
 
 (myst_cheatsheet)=
 # MyST syntax cheat sheet
