@@ -570,7 +570,7 @@ The complete list of icons available can be found [here](https://fontawesome.com
     
 ``````
 
-## Figures and images
+## Figures
 
 ``````{list-table}
 :header-rows: 1
@@ -1127,16 +1127,29 @@ To glue a math equation try:
     for more information.
 ``````
 
-### Cross-project refs
+### Cross-book references
 
-```{example}
-Link to another [HTML sphinx book](jupyter-book-docs:basics/organize)
+The cross-book referencing is achieved using the 
+[intersphinx](https://www.sphinx-doc.org/en/master/usage/extensions/intersphinx.html)
+plugin for sphinx.
+For a cross-book reference, you need to know the book name and the label defined within that book.
+
+```{note}
+All books hosted on `docs.duckietown.com` are automatically made available to be linked from any
+other Duckietown book. The book name is the repository name.
 ```
 
-The referencing is achieved with [intersphinx](https://www.sphinx-doc.org/en/master/usage/extensions/intersphinx.html).
-The reference comprises of the book name `jupyter-book-docs` and the label symbol `basics/organize`.
+#### Example
 
-The book name is defined in `_config.yml` like below
+```{example}
+Link to a [page on another book](book-opmanual-duckiebot:duckiebot-boot).
+```
+
+#### How to configure
+
+The mapping between book names and their remote location is defined in the `_config.yml` file.
+For example, we can add a link to the book `jupyter-book-docs` as follows,
+
 ```yaml
 sphinx:
   ...
@@ -1147,6 +1160,9 @@ sphinx:
         - null
 ```
 
+````{admonition} Advanced: list all labels for a given book
+:class: dropdown
+
 To conveniently find the available labels in other books, a utility comes with jupyter-book installation.
 Take the above linked book for example:
 
@@ -1156,13 +1172,13 @@ python -m sphinx.ext.intersphinx https://jupyterbook.org/en/stable/objects.inv
 
 Or, use it in a script (example outcomes provided below)
 
-```{code-cell}
-:tags: ["output_scroll", "hide-output", "full-width"]
+```python
 from sphinx.ext.intersphinx import inspect_main
 inspect_main(["https://jupyterbook.org/en/stable/objects.inv"])
 ```
 
-And the label used above, `basics/organize`, could be found under the `std:doc` category.
+````
+
 
 ## Footnotes
 
@@ -1246,6 +1262,30 @@ Requirements/outputs cards can be created using the `{needget}` directive.
     * Duckiebot
     ```
 ``````
+
+(language-format-todo)=
+## ToDos
+
+You can drop **ToDos** throughout the documentation using the `{todo}` directive.
+ToDos are rendered only on the staging documentation, they are hidden in production.
+
+``````{list-table}
+:header-rows: 1
+:widths: 6 20
+
+* - Syntax
+  - Example
+* - ````md
+    ```{todo}
+    todo message here
+    ```
+    ````
+  - ```{todo}
+    todo message here
+    ```
+``````
+
+
 ## Citations
 
 ```{note}
