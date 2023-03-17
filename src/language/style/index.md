@@ -154,7 +154,7 @@ When the user must edit a file, just say: "edit `/this/file`".
 
 Writing down the command line for editing, like the following:
 
-    $ vi /this/file
+    vi /this/file
 
 is too much detail. Only specify the editor to use if the task at hand requires 
 functionalities that are only available on a specific editor.
