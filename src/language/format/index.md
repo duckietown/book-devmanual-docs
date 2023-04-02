@@ -10,9 +10,9 @@ kernelspec:
   name: python3
 ---
 
-:::{note}
+```{note}
 This is a shortlisted version of the [MyST syntax cheat sheet](https://jupyterbook.org/en/stable/reference/cheatsheet.html).
-:::
+```
 
 (myst_cheatsheet)=
 # MyST syntax cheat sheet
@@ -384,37 +384,39 @@ Related content that does not include some duplication should be shown in a tabl
 * - Syntax
   - Example
   - Result
-* - ```md
-    ::::{tab-set}
+* - `````md
+    ````{tab-set}
     
-    :::{tab-item} Label
+    ```{tab-item} Label
     Content
-    :::
-    
-    ::::
     ```
-  - ```md
-    ::::{tab-set}
     
-    :::{tab-item} DB21
+    ````
+    `````
+    
+  - `````md
+    ````{tab-set}
+    
+    ```{tab-item} DB21
     This is example content for the DB21
-    :::
-    
-    :::{tab-item} DB21M
-    This is example content for the DB21M
-    :::
-    ::::
     ```
-  - ::::{tab-set}
     
-    :::{tab-item} DB21
-    This is example content for the DB21
-    :::
-    
-    :::{tab-item} DB21M
+    ```{tab-item} DB21M
     This is example content for the DB21M
-    :::
-    ::::
+    ```
+    ````
+    `````
+    
+  - ````{tab-set}
+    
+    ```{tab-item} DB21
+    This is example content for the DB21
+    ```
+    
+    ```{tab-item} DB21M
+    This is example content for the DB21M
+    ```
+    ````
 ``````
 
 ## Admonitions
@@ -433,11 +435,11 @@ Related content that does not include some duplication should be shown in a tabl
     ````
   - ````md
     ```{note}
-    This is an example of a note directive.
+    Use note directives for basic highlighting.
     ```
     ````
   - ```{note}
-    This is an example of a note directive.
+    Use note directives for basic highlighting.
     ```
 * - ````md
     ```{warning}
@@ -446,11 +448,11 @@ Related content that does not include some duplication should be shown in a tabl
     ````
   - ````md
     ```{warning}
-    This is an example of a warning directive.
+    Use warnings for situations that might cause harm, but can be fixed.
     ```
     ````
   - ```{warning}
-    This is an example of a warning directive.
+    Use warnings for situations that might cause harm, but can be fixed.
     ```
 * - ````md
     ```{tip}
@@ -459,24 +461,11 @@ Related content that does not include some duplication should be shown in a tabl
     ````
   - ````md
     ```{tip}
-    This is an example of a tip directive.
+    A tip is a useful suggestion for the reader.
     ```
     ````
   - ```{tip}
-    This is an example of a tip directive.
-    ```
-* - ````md
-    ```{caution}
-    text
-    ```
-    ````
-  - ````md
-    ```{caution}
-    This is an example of a caution directive.
-    ```
-    ````
-  - ```{caution}
-    This is an example of a caution directive.
+    A tip is a useful suggestion for the reader.
     ```
 * - ````md
     ```{attention}
@@ -485,11 +474,11 @@ Related content that does not include some duplication should be shown in a tabl
     ````
   - ````md
     ```{attention}
-    This is an example of an attention directive.
+    This directive should be used to highlight particularly tricky steps.
     ```
     ````
   - ```{attention}
-    This is an example of an attention directive.
+    This directive should be used to highlight particularly tricky steps.
     ```
 * - ````md
     ```{danger}
@@ -498,50 +487,11 @@ Related content that does not include some duplication should be shown in a tabl
     ````
   - ````md
     ```{danger}
-    This is an example of a danger directive.
+    Used for situations that might cause irreparable harm (to people or robots).
     ```
     ````
   - ```{danger}
-    This is an example of a danger directive.
-    ```
-* - ````md
-    ```{error}
-    text
-    ```
-    ````
-  - ````md
-    ```{error}
-    This is an example of an error directive.
-    ```
-    ````
-  - ```{error}
-    This is an example of an error directive.
-    ```
-* - ````md
-    ```{hint}
-    text
-    ```
-    ````
-  - ````md
-    ```{hint}
-    This is an example of a hint directive.
-    ```
-    ````
-  - ```{hint}
-    This is an example of a hint directive.
-    ```
-* - ````md
-    ```{important}
-    text
-    ```
-    ````
-  - ````md
-    ```{important}
-    This is an example of an important directive.
-    ```
-    ````
-  - ```{important}
-    This is an example of an important directive.
+    Used for situations that might cause irreparable harm (to people or robots).
     ```
 * - ````md
     ```{seealso}
@@ -550,10 +500,11 @@ Related content that does not include some duplication should be shown in a tabl
     ````
   - ````md
     ```{seealso}
+    Used for external links (to third-party websites or other documents).
     ```
     ````
   - ```{seealso}
-    This is an example of a seealso directive.
+    Used for external links (to third-party websites or other documents).
     ```
 ``````
 
@@ -619,7 +570,7 @@ The complete list of icons available can be found [here](https://fontawesome.com
     
 ``````
 
-## Figures and images
+## Figures
 
 ``````{list-table}
 :header-rows: 1
@@ -768,6 +719,87 @@ Use the `:class: framed` parameter to add a border around the image.
     ```
   - This [image](image-example)
     is an example.
+``````
+
+## Videos
+
+Videos can be referenced using the following methods:
+
+1) `vimeo` - When possible, video content should be added to the Vimeo account and formatted with the custom Duckietown `vimeo` directive.  
+2) `videoembed` - For other video content accessible via a web link, use the `videoembed` directive. All [`iframe` attributes](https://www.w3schools.com/tags/tag_iframe.ASP) are available mimicking the `:alt:` parameter syntax below.
+3) `video` - For videos stored locally to the book project (this is not recommended), use the `video` directive. All [`iframe` attributes](https://www.w3schools.com/tags/tag_video.asp) are available mimicking the `:alt:` parameter syntax below.
+
+
+### Referencing Vimeo videos
+
+``````{list-table}
+:header-rows: 1
+:widths: 15 20 15
+
+* - Syntax
+  - Example
+  - Result
+* - ````md
+    ```{vimeo} video-id
+    :alt: alt text
+    ```
+    ````
+  - ````md
+    ```{vimeo} 527022343
+    :alt: alt text
+    ```
+    ````
+  - ```{vimeo} 527022343
+    :alt: alt text
+    ```
+``````
+
+### Referencing web videos
+
+``````{list-table}
+:header-rows: 1
+:widths: 15 20 15
+
+* - Syntax
+  - Example
+  - Result
+* - ````md
+    ```{video} embed_link
+    :alt: alt text
+    ```
+    ````
+  - ````md
+    ```{video} https://www.youtube.com/embed/mXH1u885bn8
+    :alt: alt text
+    ```
+    ````
+  - 
+``````
+
+### Referencing local videos
+
+This is not recommended - please host your video content on Vimeo or another online service rather than in the book project.  If absolutely necessary, you can include local videos with custom formatting using the `video` directive.
+
+Supported file types: `.mp4`, `.ogm`, `.ogv`, `.ogg`, `.webm`.
+
+``````{list-table}
+:header-rows: 1
+:widths: 15 20 15
+
+* - Syntax
+  - Example
+  - Result
+* - ````md
+    ```{video} file_path 
+    :alt: alt
+    ```
+    ````
+  - ````md
+    ```{video} ../assets/videos/my_video.mp4
+    :alt: alt text
+    ```
+    ````
+  -
 ``````
 
 ## Math
@@ -1095,16 +1127,29 @@ To glue a math equation try:
     for more information.
 ``````
 
-### Cross-project refs
+### Cross-book references
 
-```{example}
-Link to another [HTML sphinx book](jupyter-book-docs:basics/organize)
+The cross-book referencing is achieved using the 
+[intersphinx](https://www.sphinx-doc.org/en/master/usage/extensions/intersphinx.html)
+plugin for sphinx.
+For a cross-book reference, you need to know the book name and the label defined within that book.
+
+```{note}
+All books hosted on `docs.duckietown.com` are automatically made available to be linked from any
+other Duckietown book. The book name is the repository name.
 ```
 
-The referencing is achieved with [intersphinx](https://www.sphinx-doc.org/en/master/usage/extensions/intersphinx.html).
-The reference comprises of the book name `jupyter-book-docs` and the label symbol `basics/organize`.
+#### Example
 
-The book name is defined in `_config.yml` like below
+```{example}
+Link to a [page on another book](book-opmanual-duckiebot:duckiebot-boot).
+```
+
+#### How to configure
+
+The mapping between book names and their remote location is defined in the `_config.yml` file.
+For example, we can add a link to the book `jupyter-book-docs` as follows,
+
 ```yaml
 sphinx:
   ...
@@ -1115,6 +1160,9 @@ sphinx:
         - null
 ```
 
+````{admonition} Advanced: list all labels for a given book
+:class: dropdown
+
 To conveniently find the available labels in other books, a utility comes with jupyter-book installation.
 Take the above linked book for example:
 
@@ -1124,13 +1172,13 @@ python -m sphinx.ext.intersphinx https://jupyterbook.org/en/stable/objects.inv
 
 Or, use it in a script (example outcomes provided below)
 
-```{code-cell}
-:tags: ["output_scroll", "hide-output", "full-width"]
+```python
 from sphinx.ext.intersphinx import inspect_main
 inspect_main(["https://jupyterbook.org/en/stable/objects.inv"])
 ```
 
-And the label used above, `basics/organize`, could be found under the `std:doc` category.
+````
+
 
 ## Footnotes
 
@@ -1185,6 +1233,55 @@ Troubleshooting cards can be created using the `{trouble}` directive.
     I do not see a camera image.
     ---
     Make sure the camera cable is plugged in.
+    ```
+``````
+
+(language-format-requirements)=
+## Requirements
+
+Requirements/outputs cards can be created using the `{needget}` directive.
+
+``````{list-table}
+:header-rows: 1
+:widths: 6 20
+
+* - Syntax
+  - Example
+* - ````md
+    ```{needget}
+    * Requirement 1
+    * Requirement 2
+    ---
+    * Output 1
+    ```
+    ````
+  - ```{needget}
+    * Duckie
+    * Robot
+    ---
+    * Duckiebot
+    ```
+``````
+
+(language-format-todo)=
+## ToDos
+
+You can drop **ToDos** throughout the documentation using the `{todo}` directive.
+ToDos are rendered only on the staging documentation, they are hidden in production.
+
+``````{list-table}
+:header-rows: 1
+:widths: 6 20
+
+* - Syntax
+  - Example
+* - ````md
+    ```{todo}
+    todo message here
+    ```
+    ````
+  - ```{todo}
+    todo message here
     ```
 ``````
 
