@@ -1263,6 +1263,31 @@ Requirements/outputs cards can be created using the `{needget}` directive.
     ```
 ``````
 
+## Tests
+
+You can use the Test / What to Expect card (`testexpect`) to define checkpoints after book instructions.
+
+``````{list-table}
+:header-rows: 1
+:widths: 10 20
+
+* - Syntax
+  - Result
+* - ````md
+    ```{testexpect}
+    Test
+    ---
+    Expect
+    ```
+    ````
+  - ```{testexpect}
+    ```bash
+    pip3 --version
+    ---
+    This command should output a version number for the `pip3` package.
+    ```
+``````
+
 (language-format-todo)=
 ## ToDos
 
