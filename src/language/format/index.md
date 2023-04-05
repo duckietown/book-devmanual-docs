@@ -423,17 +423,11 @@ Related content that does not include some duplication should be shown in a tabl
 
 ``````{list-table}
 :header-rows: 1
-:widths: 10 20 20
+:widths: 1 20
 
 * - Syntax
-  - Example
   - Result
 * - ````md
-    ```{note}
-    text
-    ```
-    ````
-  - ````md
     ```{note}
     Use note directives for basic highlighting.
     ```
@@ -443,23 +437,14 @@ Related content that does not include some duplication should be shown in a tabl
     ```
 * - ````md
     ```{warning}
-    text
-    ```
-    ````
-  - ````md
-    ```{warning}
-    Use warnings for situations that might cause harm, but can be fixed.
+    Use warnings for situations that might 
+    cause harm, but can be fixed.
     ```
     ````
   - ```{warning}
     Use warnings for situations that might cause harm, but can be fixed.
     ```
 * - ````md
-    ```{tip}
-    text
-    ```
-    ````
-  - ````md
     ```{tip}
     A tip is a useful suggestion for the reader.
     ```
@@ -469,12 +454,8 @@ Related content that does not include some duplication should be shown in a tabl
     ```
 * - ````md
     ```{attention}
-    text
-    ```
-    ````
-  - ````md
-    ```{attention}
-    This directive should be used to highlight particularly tricky steps.
+    This directive should be used to
+    highlight particularly tricky steps.
     ```
     ````
   - ```{attention}
@@ -482,12 +463,8 @@ Related content that does not include some duplication should be shown in a tabl
     ```
 * - ````md
     ```{danger}
-    text
-    ```
-    ````
-  - ````md
-    ```{danger}
-    Used for situations that might cause irreparable harm (to people or robots).
+    Used for situations that might 
+    cause irreparable harm (to people or robots).
     ```
     ````
   - ```{danger}
@@ -495,12 +472,8 @@ Related content that does not include some duplication should be shown in a tabl
     ```
 * - ````md
     ```{seealso}
-    text
-    ```
-    ````
-  - ````md
-    ```{seealso}
-    Used for external links (to third-party websites or other documents).
+    Used for external links (to
+    third-party websites or other documents).
     ```
     ````
   - ```{seealso}
