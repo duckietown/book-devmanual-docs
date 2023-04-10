@@ -369,7 +369,7 @@ must also include a table title. See example above.
 ## Tabs
 
 Tabs can be used in several ways:
-1) At the page level to enclose instruction versions related to different releases (for example, to separate the DB21 and DB21M assembly instructions).
+1) At the page level to enclose instruction versions related to different releases (for example, to separate the DB19 and DB21 assembly instructions).
 2) Within pages to divide duplicate content with tab based.
 3) Nested within other components such as a list.
 
@@ -379,42 +379,31 @@ Related content that does not include some duplication should be shown in a tabl
 
 ``````{list-table}
 :header-rows: 1
-:widths: 10 20 20
+:widths: 20 20
 
-* - Syntax
-  - Example
+* - Example
   - Result
 * - `````md
     ````{tab-set}
     
-    ```{tab-item} Label
-    Content
+    ```{tab-item} DB19
+    This is example content for the DB19
     ```
-    
-    ````
-    `````
-    
-  - `````md
-    ````{tab-set}
     
     ```{tab-item} DB21
     This is example content for the DB21
-    ```
-    
-    ```{tab-item} DB21M
-    This is example content for the DB21M
     ```
     ````
     `````
     
   - ````{tab-set}
     
-    ```{tab-item} DB21
-    This is example content for the DB21
+    ```{tab-item} DB19
+    This is example content for the DB19
     ```
     
-    ```{tab-item} DB21M
-    This is example content for the DB21M
+    ```{tab-item} DB21
+    This is example content for the DB21
     ```
     ````
 ``````
@@ -423,17 +412,11 @@ Related content that does not include some duplication should be shown in a tabl
 
 ``````{list-table}
 :header-rows: 1
-:widths: 10 20 20
+:widths: 1 20
 
 * - Syntax
-  - Example
   - Result
 * - ````md
-    ```{note}
-    text
-    ```
-    ````
-  - ````md
     ```{note}
     Use note directives for basic highlighting.
     ```
@@ -443,23 +426,14 @@ Related content that does not include some duplication should be shown in a tabl
     ```
 * - ````md
     ```{warning}
-    text
-    ```
-    ````
-  - ````md
-    ```{warning}
-    Use warnings for situations that might cause harm, but can be fixed.
+    Use warnings for situations that might 
+    cause harm, but can be fixed.
     ```
     ````
   - ```{warning}
     Use warnings for situations that might cause harm, but can be fixed.
     ```
 * - ````md
-    ```{tip}
-    text
-    ```
-    ````
-  - ````md
     ```{tip}
     A tip is a useful suggestion for the reader.
     ```
@@ -469,12 +443,8 @@ Related content that does not include some duplication should be shown in a tabl
     ```
 * - ````md
     ```{attention}
-    text
-    ```
-    ````
-  - ````md
-    ```{attention}
-    This directive should be used to highlight particularly tricky steps.
+    This directive should be used to
+    highlight particularly tricky steps.
     ```
     ````
   - ```{attention}
@@ -482,12 +452,8 @@ Related content that does not include some duplication should be shown in a tabl
     ```
 * - ````md
     ```{danger}
-    text
-    ```
-    ````
-  - ````md
-    ```{danger}
-    Used for situations that might cause irreparable harm (to people or robots).
+    Used for situations that might 
+    cause irreparable harm (to people or robots).
     ```
     ````
   - ```{danger}
@@ -495,12 +461,8 @@ Related content that does not include some duplication should be shown in a tabl
     ```
 * - ````md
     ```{seealso}
-    text
-    ```
-    ````
-  - ````md
-    ```{seealso}
-    Used for external links (to third-party websites or other documents).
+    Used for external links (to
+    third-party websites or other documents).
     ```
     ````
   - ```{seealso}
@@ -1260,6 +1222,31 @@ Requirements/outputs cards can be created using the `{needget}` directive.
     * Robot
     ---
     * Duckiebot
+    ```
+``````
+
+## Tests
+
+You can use the Test / What to Expect card (`testexpect`) to define checkpoints after book instructions.
+
+``````{list-table}
+:header-rows: 1
+:widths: 10 20
+
+* - Syntax
+  - Result
+* - ````md
+    ```{testexpect}
+    Test
+    ---
+    Expect
+    ```
+    ````
+  - ```{testexpect}
+    ```bash
+    pip3 --version
+    ---
+    This command should output a version number for the `pip3` package.
     ```
 ``````
 
