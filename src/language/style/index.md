@@ -134,7 +134,20 @@ The following holds for all technical writing.
 
 - Subtle humor and puns about duckies are encouraged.
 
+Do make use of the necessary complexity to convey your message, but do not hide behind overly complex language to disguise flaws. Remember Einstein’s quote:
 
+> You don’t really understand something unless you can explain it to your grandmother.
+
+```{admonition} Examples
+
+provide → give
+
+query → question
+
+in order to → to
+
+utilize → use
+```
 
 ## Frequently misspelled words
 
