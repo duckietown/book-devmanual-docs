@@ -5,9 +5,9 @@ This section describes the workflow to edit the documentation for one single boo
 
 In a nutshell:
 
-* You *fork* the repos to your GitHub account.
-* You compile locally using a Docker container (no installation necessary).
-* You contribute by opening a pull request.
+* *Fork* the repos to your GitHub account.
+* Compile locally using a Docker container (no installation necessary).
+* Contribute by opening a pull request.
 
 
 ## Workflow
@@ -16,25 +16,20 @@ In a nutshell:
 
 We assume that you have set up a GitHub account with working public keys.
 
-See: [Basic SSH config](+software_reference#github-access).
-
-See: [Key pair creation](+software_reference#howto-create-key-pair).
-
-See: [Adding public key on GitHub](+software_reference#github-access).
-
+See: [GitHub SSH config](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
 
 ### Install Docker
 
-Before you start, make sure that you have [installed Docker](+software_reference#docker).
+Before you start, make sure that you have [installed Docker](book-opmanual-duckiebot:laptop-setup-docker).
 
 
 ### Install the Duckietown Shell
 
-Install the Duckietown Shell using [these instructions](https://github.com/duckietown/duckietown-shell).
+Install the Duckietown Shell using [these instructions](book-opmanual-duckiebot:laptop-setup-shell).
 
 ### Fork the `book-[name]` repository on GitHub
 
-Navigate to the book repository page on GitHub, and click on the {bdg-dark-line}`Fork` button at
+Navigate to the book repository page on GitHub, and click on the {bdg-dark-line}`Fork` button in
 the top-right corner of the page.
 
 This will create a new repository on your account that is linked to the original one.
