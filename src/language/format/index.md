@@ -1272,6 +1272,23 @@ ToDos are rendered only on the staging documentation, they are hidden in product
     ```
 ``````
 
+## Json Schemas
+
+You can document a json schema by using the `jsonschema` directive. It will parse the schema and produce a simple, human-readable markdown documentation.
+
+#### Example:
+
+````md
+```{jsonschema} assets/example-schema.json
+```
+````
+
+#### Result:
+
+```{jsonschema} assets/example-schema.json
+```
+
+---
 
 ## Citations
 
