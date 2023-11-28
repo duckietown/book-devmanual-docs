@@ -166,7 +166,7 @@ You can specify the text of the target:
   - Example
   - Result
 * - ```html
-    <tagName> text <tagName>
+    <tagName> text </tagName>
     ```
   - ```html
     <p> This is a paragraph </p>
