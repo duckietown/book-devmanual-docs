@@ -1306,3 +1306,25 @@ And, at the bottom of the page, include the list of references:
 ```{bibliography}
 :filter: docname in docnames
 ```
+
+
+## PDF Slides
+
+Use the following syntax to create an embedded rendering of a PDF slide deck.
+
+``````md
+```{slides} <LOCATION>
+```
+``````
+
+where `<LOCATION>` can be a relative path to a PDF file in the book repository or an absolute URL
+to an external PDF file.
+
+### Example
+
+```{note}
+The slides viewer DOES NOT work in local builds of a book.
+```
+
+```{slides} ../../_assets/slides-example1.pdf
+```
