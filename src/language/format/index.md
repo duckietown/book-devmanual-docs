@@ -10,6 +10,11 @@ kernelspec:
   name: python3
 ---
 
+```{seo}
+    :description: The Duckietown MyST syntax cheat sheet is a list of all the builtin and custom sphinx directives we can use in a Duckietown book.
+    :keywords: myst,sphinx,cheat sheet,directives
+```
+
 ```{note}
 This is a shortlisted version of the [MyST syntax cheat sheet](https://jupyterbook.org/en/stable/reference/cheatsheet.html).
 ```
@@ -1270,6 +1275,25 @@ ToDos are rendered only on the staging documentation, they are hidden in product
   - ```{todo}
     todo message here
     ```
+``````
+
+(language-format-seo)=
+## SEO (Search Engine Optimization)
+
+You can use the **seo** directive to set SEO metadata for the page. For example, you can set a page
+description and a set of keywords as shown in the example below.
+
+``````{list-table}
+:header-rows: 1
+:widths: 30
+
+* - Syntax
+* - ````md
+    ```{seo}
+    :description: A description for the page
+    :keywords: word1,word2,word3
+    ```
+    ````
 ``````
 
 
