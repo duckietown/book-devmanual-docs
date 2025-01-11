@@ -79,6 +79,14 @@ You can specify the text of the target:
 [MyST syntax lecture](myst_cheatsheet)
 ```
 
+You can also specify a target in another book using the syntax:
+
+```md
+[](book-BOOKNAME:target)
+``
+
+Example here is link to the Duckiebot Operation Manual page about DB21J assembly [](book-opmanual-duckiebot:assembling-duckiebot-db21j). 
+
 ## Quote
 
 ``````{list-table}
