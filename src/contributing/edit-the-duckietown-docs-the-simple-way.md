@@ -1,3 +1,8 @@
+```{seo}
+:description: The simple way of contributing to the Duckietown documentation is through online edits. 
+:keywords: duckietown, documentation, the simple way, online, Git
+```
+
 (github-editor-workflow)=
 # The simple way: Github
 
@@ -5,7 +10,7 @@ The simplest way to contribute to the documentation is to hover the GitHub icon 
 at the top the documentation page we want to edit, and then press "suggest edit" from the dropdown menu 
 as shown in the image below.
 
-```{figure} ../../_images/contributing/simple/step1.png
+```{figure} ../_images/contributing/simple/step1.png
 :name: fig:simple_way_1
 :class: framed
 
@@ -20,7 +25,7 @@ fork the repository first, follow the instructions shown on GitHub to do so.
 
 Let us try this out and perform an edit:
 
-```{figure} ../../_images/contributing/simple/step2.png
+```{figure} ../_images/contributing/simple/step2.png
 :name: fig:simple_way_2
 :class: framed
 
@@ -32,7 +37,7 @@ Note that not all functionalities are visible by the preview.
 For significant changes to the documentation, refer to [](local-editor-workflow).
 
 
-```{figure} ../../_images/contributing/simple/step3.png
+```{figure} ../_images/contributing/simple/step3.png
 :name: fig:simple_way_3
 :class: framed
 
@@ -45,7 +50,7 @@ this will give you the opportunity to submit your changes for review before they
 Then fill in the commit message and description fields
 before confirming by clicking on the "Propose changes" button ({numref}`fig:simple_way_4`).
 
-```{figure} ../../_images/contributing/simple/step4.png
+```{figure} ../_images/contributing/simple/step4.png
 :name: fig:simple_way_4
 :class: framed
 
@@ -58,7 +63,7 @@ Add any further details you want to share with the reviewers in the Pull Request
 
 Complete by clicking on the `Create pull request` button ({numref}`fig:simple_way_5`).
 
-```{figure} ../../_images/contributing/simple/step5.png
+```{figure} ../_images/contributing/simple/step5.png
 :name: fig:simple_way_5
 :class: framed
 
