@@ -8,12 +8,12 @@ parts:
       maxdepth: 2
       numbered: False
       chapters:
-          - file: contributing/overview/index
-          - file: contributing/simple_way/index
-          - file: contributing/local_edit/index
+          - file: contributing/overview
+          - file: contributing/edit-the-duckietown-docs-the-simple-way
+          - file: contributing/edit-the-duckietown-docs-with-local-edits
     - caption: Format and Style
       maxdepth: 2
       numbered: False
       chapters:
-          - file: language/format/index
-          - file: language/style/index
+          - file: language/duckietown-docs-format-cheatsheet
+          - file: language/duckietown-docs-style

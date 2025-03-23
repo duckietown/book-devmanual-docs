@@ -1,3 +1,8 @@
+```{seo}
+:description: The Duckietown documentation is written with technical writing style. Learn more about this writing style here.
+:keywords: duckietown, documentation, style, technical writing
+```
+
 (documentation-style-guide)=
 # Style guide
 

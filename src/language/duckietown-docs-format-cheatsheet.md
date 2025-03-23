@@ -11,9 +11,10 @@ kernelspec:
 ---
 
 ```{seo}
-    :description: The Duckietown MyST syntax cheat sheet is a list of all the builtin and custom sphinx directives we can use in a Duckietown book.
-    :keywords: myst,sphinx,cheat sheet,directives
+:description: This is a cheatsheet summarizing the environments for contributing to the Duckietown documentation. 
+:keywords: myst, cheatsheet, duckietown, documentation
 ```
+
 
 ```{note}
 This is a shortlisted version of the [MyST syntax cheat sheet](https://jupyterbook.org/en/stable/reference/cheatsheet.html).
@@ -207,9 +208,9 @@ Example here is link to the Duckiebot Operation Manual page about DB21J assembly
     [text](relative_path)
     ```
   - ```md
-    [Another page](../style/index)
+    [Another page](../language/documentation-style-guide)
     ```
-  - [Another page](../style/index)
+  - [Another page](../language/documentation-style-guide)
 * - ```md
     <target>
     ```
@@ -562,14 +563,14 @@ The complete list of icons available can be found [here](https://fontawesome.com
     ```
     ````
   - ````md
-    ```{figure} ../../_images/duckietown.jpeg
+    ```{figure} ../_images/duckietown.jpeg
     :width: 50px
     :name: figure-example-2
 
     Here is my figure caption!
     ```
     ````
-  - ```{figure} ../../_images/duckietown.jpeg
+  - ```{figure} ../_images/duckietown.jpeg
     :width: 50px
     :name: figure-example-2
 
@@ -581,13 +582,13 @@ The complete list of icons available can be found [here](https://fontawesome.com
     ```
     ````
   - ````md
-    ```{image} ../../_images/duckietown.jpeg
+    ```{image} ../_images/duckietown.jpeg
     :scale: 20%
     :align: center
     :name: image-example
     ```
     ````
-  - ```{image} ../../_images/duckietown.jpeg
+  - ```{image} ../_images/duckietown.jpeg
     :scale: 20%
     :align: center
     :name: image-example
@@ -619,12 +620,12 @@ Use the `:class: framed` parameter to add a border around the image.
     ```
     ````
   - ````md
-    ```{figure} ../../_images/duckietown.jpeg
+    ```{figure} ../_images/duckietown.jpeg
     :width: 50px
     :class: framed
     ```
     ````
-  - ```{figure} ../../_images/duckietown.jpeg
+  - ```{figure} ../_images/duckietown.jpeg
     :width: 50px
     :class: framed
     ```
@@ -864,7 +865,7 @@ Wrap in-line code blocks in backticks: `boolean example = true;`.
 ````md
 ```python
 note = "Python syntax highlighting"
-print(node)
+print(note)
 ```
 ````
 
@@ -880,7 +881,7 @@ No syntax highlighting.
 
 ```python
 note = "Python syntax highlighting"
-print(node)
+print(note)
 ```
 
 or
@@ -1110,8 +1111,7 @@ plugin for sphinx.
 For a cross-book reference, you need to know the book name and the label defined within that book.
 
 ```{note}
-All books hosted on `docs.duckietown.com` are automatically made available to be linked from any
-other Duckietown book. The book name is the repository name.
+All books hosted on `docs.duckietown.com` are automatically made available to be linked from any other Duckietown book. The book name is the repository name.
 ```
 
 #### Example
