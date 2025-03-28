@@ -28,9 +28,9 @@ You can find all these artifacts produced at the site [`https://docs.duckietown.
 (documentation_branches_and_more)=
 ## Documentation branches
 
-Each book repository has several branches. In particular, the `daffy` branch includes documentation related to the `daffy` Duckietown software distribution. The `ente` branch is describes the `ente` version of Duckietown software distribution, and it substantially different from the older `daffy` version. 
+Each book repository has several branches. In particular, the `daffy` branch includes documentation related to the `daffy` Duckietown software distribution. The `ente` branch describes the `ente` version of Duckietown software distribution, and it is substantially different from the older `daffy` version. 
 
-`Daffy` documentation can be found at [`https://docs.duckietown.com/daffy`](https://docs.duckietown.com/daffy). 
+`Daffy` documentation can be found at [`https://docs.duckietown.com/daffy`](https://docs.duckietown.com/daffy), and the respective content available on the [Duckietown GitHub](https://github.com/duckietown), in repositories named `docs-[book name]`, e.g., the [Old Duckiebot operation manual](https://github.com/duckietown/docs-opmanual_duckiebot). 
 
 `Ente` documentation can be found at [`https://docs.duckietown.com/ente`](https://docs.duckietown.com/ente).
 
