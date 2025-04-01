@@ -8,15 +8,11 @@ This template provides a boilerplate repository for books in Duckietown.
 These are the fields you **must** update to create your book.
 
 
-### Placeholders in `dtproject/self.yaml`
+### Placeholders in `src/_config.yml`
 
-This file contains information about the book.
-Replace the following placeholders with the appropriate information.
-
-- `<BOOK_NAME_HERE>`: Replace it with the name of the book (e.g., `book-opmanual-duckiebot`);
-- `<YOUR_FULL_NAME>`: Replace with your name in the format "First Last";
-- `<YOUR_EMAIL_ADDRESS>`: Replace with your email address;
-- `<BOOK_DESCRIPTION_HERE>`: Replace with a one-line description of the book;
+This file configures the build of the book.
+Replace the placeholder string `BOOK_NAME_HERE` (there should be three separate instances of it) with
+the name of the repository hosting your book (e.g., `book-devmanual-docs`).
 
 
 ### Structure in `src/_toc.yml`
